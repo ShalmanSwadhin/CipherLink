@@ -1,0 +1,16 @@
+{
+  "name": "cipherlink",
+  "version": "0.1.0",
+  "description": "CipherLink - secure TCP chat (Phase 4: authenticated session-key establishment; chat still plaintext)",
+  "main": "src/server.js",
+  "scripts": {
+    "server": "node src/server.js",
+    "client": "node src/client.js",
+    "test": "node tests/test-protocol.js && node tests/test-crypto.js && node tests/test-handshake.js && node tests/test-frame-limit.js && node tests/test-server.js && node tests/test-handshake-integration.js && node tests/test-cli.js"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}
